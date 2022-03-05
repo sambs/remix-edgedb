@@ -1,0 +1,3 @@
+insert Movie { title:= "Iron Man" };
+insert Movie { title:= "Star Wars" };
+insert Movie { title:= "Marriage Story" };

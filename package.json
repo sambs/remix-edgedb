@@ -7,6 +7,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production remix build",
     "dev": "cross-env NODE_ENV=development remix dev",
+    "load-fixtures": "edgedb query --file fixtures.edgedb",
     "postinstall": "remix setup node",
     "start": "cross-env NODE_ENV=production remix-serve build"
   },
