@@ -12,6 +12,7 @@
 ```
 npm i
 edgedb project init
+npm run load-fixtures
 ```
 
 ## Development
