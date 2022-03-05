@@ -1,12 +1,6 @@
 import { useLoaderData } from "remix";
-import { $infer, e, client } from "~/database";
-
-const loaderQuery = e.select(e.Movie, () => ({
-  id: true,
-  title: true,
-}));
-
-type LoaderData = $infer<typeof loaderQuery>;
+import { client } from "~/database";
+import { LoaderData, loaderQuery } from "~/queries";
 
 export async function loader() {
   return loaderQuery.run(client);
